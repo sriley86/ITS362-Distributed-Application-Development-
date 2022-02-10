@@ -1,0 +1,95 @@
+/* its362 lab02 rileysharyl 01 30 2022 */
+
+body {
+    background-color: floralwhite;
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+header {
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 30pt;
+}
+
+#unorderedList {
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: start;
+    margin-left: auto;
+    font-size: 20pt;
+}
+
+table {
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 16pt;
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+caption {
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 18pt;
+}
+
+
+/* table body*/
+
+tbody {
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 16pt;
+}
+
+
+/* table header*/
+
+th {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    background-color: lavender;
+}
+
+
+/* table data*/
+
+td {
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+span {
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 30pt;
+}
+
+button {
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 16pt;
+}
+
+footer {
+    color: gray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12pt;
+    text-align: center;
+}

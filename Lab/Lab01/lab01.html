@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>its362 lab01 Jan 25 2022</title>
+    <script type="text/javascript" src="functions.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <p> Final Grade Calculator </p>
+
+        </h1>
+    </header>
+
+    <div>
+        <main>
+            <div>
+                <table>
+                    <caption>Enter Total Points For Assessemet Type</caption>
+
+                    <thead>
+                        <tr>
+                            <th> <b> &ensp;&ensp;Assessemets&ensp; &ensp; </b> </th>
+                            <th> <b> &ensp;Total Points Received&ensp; </b> </th>
+                            <th> <b> &ensp;&ensp;Max points &ensp;</b> </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><b>Labs</b></td>
+                            <td><input type="number" id="labEntry"></td>
+                            <td>125</td>
+                        </tr>
+                        <tr>
+                            <td><b>Quizzes</b></td>
+                            <td><input type="number" id="quizEntry"></td>
+                            <td>50</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Exams</b></td>
+                            <td><input type="number" id="examTotal"></td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <td id><b>Project</b></td>
+                            <td><input type="number" id="projectEntry"></td>
+                            <td>100</td>
+                        </tr>
+
+                        <tr>
+                            <td><b>ExtraCredit</b></td>
+                            <td><input type="number" id="extraEntry"></td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td><b>Participation</b></td>
+                            <td><input type="number" id="particpationEntry"></td>
+                            <td>75</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+            <br>
+
+            <div>
+                <button id="calculateGradeButton" onclick="grades()"> <b>Calculate Final Grade</b> </button>
+
+            </div>
+        </main>
+        <br>
+        <span id="finalPercent"></span>
+        <br><br/><br/>
+
+        <footer>
+            Copyright &copy; Sharyl Riley 2022
+        </footer>
+    </div>
+</body>
+
+</html>
