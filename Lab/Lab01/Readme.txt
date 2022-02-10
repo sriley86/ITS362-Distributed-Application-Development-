@@ -57,15 +57,4 @@ D
 < 60
 F
 
-Please pay attention to your coding style. At this point, you should have developed a good habit of 
-writing professional type of programming code.
 
-Please do not use any JavaScript frameworks/libraries which have not been covered in the course.
-
-You should have at least 2 separate code files: html, and js. A .css file is not required but is still highly 
-encouraged.
-
-Deliverables:
-An electronic copy of all your code files and screen shots must be submitted to Brightspace. Please zip 
-everything.
-ITS362 Lab02		1 of 1
