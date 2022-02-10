@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>its362 quiz3 02 03 2022</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" scr=javascript>
+        function addToTable() {
+            var $inputValue = $('#inputValue').val();
+            var $addInputCell = $('<td></td>');
+            $addInputCell.text($inputValue);
+            $('#cellValue').append($addInputCell);
+
+        }
+
+        function turnTextRed() {
+            $('th').css('color', 'red');
+
+        }
+
+        function alignCenter() {
+            $('td').attr('align', 'center');
+        }
+
+        function borderBetweenCells() {
+            $('th').addClass('tableBorder');
+            $('td').addClass('textBorder');
+        }
+
+        function removeBorder() {
+            $('th').removeClass('tableBorder');
+            $('td').removeClass('textBorder');
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1> QUIZ 3: jQuery Basics</h1>
+    </header>
+
+    <br> Enter Cell Value: <input type="text" id="inputValue" &ensp;&ensp;&ensp;&ensp;/>
+    <input type="button" value="Add To Table" onclick="addToTable()" />
+    <br><br>
+
+    <table id=cellValue>
+
+        <tr>
+            <th>Column One</th>
+            <th>Column Two</th>
+
+        </tr>
+
+        <tr>
+
+        </tr>
+        <br>
+    </table>
+    <br>
+    <input type="button" value="Turn Text Red" onclick="turnTextRed()" /><br><br>
+    <input type="button" value="Table Text Centered" onclick="alignCenter()" /><br><br>
+    <input type="button" value="Add Border between Cells" onclick="borderBetweenCells()" /><br><br>
+    <input type="button" value="Remove Added Border" onclick="removeBorder()" /><br>
+
+
+
+    <br>
+
+
+</body>
+
+<br><br/><br/>
+
+<footer>
+    Copyright &copy; Sharyl Riley 2022
+</footer>
+
+</html>

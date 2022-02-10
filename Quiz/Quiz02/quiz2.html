@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>its362 quiz2 01 27 2022</title>
+
+    <script type="text/javascript" language="javascript">
+        function getInfo() {
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var emailOne = document.getElementById("Email").value;
+
+            var result = firstName + " " + lastName + " " + emailOne;
+            document.getElementById("display").innerHTML = result;
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1> ITS362 Quiz02</h1>
+    </header>
+
+    <form>
+        Enter First Name: <input type="text" id="firstName" />
+        <br>Enter Last Name: <input type="text" id="lastName" />
+        <br>Enter Email Address: <input type="text" id="Email" />
+
+        <br><input type="button" onclick="getInfo()" value="Click to Display Input!!!" />
+    </form>
+
+    <br><span id="display"></span>
+
+</body>
+
+<br><br/><br/>
+
+<footer>
+    Copyright &copy; Sharyl Riley 2022
+</footer>
+
+</html>

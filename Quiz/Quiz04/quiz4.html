@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>its362 quiz4 02 09 2022</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script type="text/javascript" scr=javascript>
+    </script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css" />
+    <style>
+
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $('#date').datepicker();
+        });
+        $(document).ready(function() {
+
+            $("#dateValue").hide();
+
+        });
+
+        $(document).ready(function() {
+            $("#date").click(function() {
+                $("#dateValue").show();
+
+            });
+        });
+
+        function addToTable() {
+            var $inputValue = $('#date').val();
+            var $addInputCell = $('<td></td>');
+            $addInputCell.text($inputValue);
+            $('#dateValue').append($addInputCell);
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1> QUIZ 4: jQuery Widgets</h1>
+    </header>
+    <br>
+
+    <span>Pick a Date:</span>
+    <input type="text" id="date"><input type="button" value="Add To Table" onclick="addToTable()" />
+    <br><br><br>
+    <table id="dateValue">
+        <tr>
+            <th colspan="10">Dates Table</th>
+        </tr>
+
+        <tr></tr>
+
+    </table>
+
+
+</body>
+
+<br><br><br>
+<footer>
+    Copyright &copy; Sharyl Riley 2022
+</footer>
+
+</html>
+
+</html>
