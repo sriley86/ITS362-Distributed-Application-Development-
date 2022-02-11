@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>its362 lab04 Feb 11 2022</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <p> Final Grade Calculator </p>
+
+        </h1>
+    </header>
+
+
+    <main>
+        <div>
+            <table>
+                <caption>Enter Total Points For Assessemet Type</caption>
+                <caption> &ensp; </caption>
+                <br>
+                <thead>
+                    <tr>
+                        <th> <b> &ensp;&ensp;Assessemets&ensp; &ensp; </b> </th>
+                        <th> <b> &ensp;Total Points Received&ensp; </b> </th>
+                        <th> <b> &ensp;&ensp;Max points &ensp;</b> </th>
+                        <th><b>&ensp;&ensp;Grade Entry&ensp;</b></th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><b>Labs</b></td>
+                        <td><span id="labScoreTotal"></span></td>
+                        <td>125</td>
+                        <td><button id="showLabTableButton"> <b>Show Scores</b> </button></td>
+                    </tr>
+                    <tr>
+                        <td><b>Quizzes</b></td>
+                        <td><span id="quizScoreTotal"></span></td>
+                        <td>50</td>
+                        <td><button id="showQuizTableButton"> <b>Show Scores</b> </button></td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Exams</b></td>
+                        <td><span id="examScoreTotal"></span></td>
+                        <td>200</td>
+                        <td><button id="showExamTableButton"> <b>Show Scores</b> </button></td>
+                    </tr>
+                    <tr>
+                        <td id><b>Project</b></td>
+                        <td><span id="projectScoreTotal"></span></td>
+                        <td>100</td>
+                        <td><button id="showProjectButton"> <b>Show Scores</b> </button></td>
+                    </tr>
+
+                    <tr>
+                        <td><b>ExtraCredit</b></td>
+                        <td><span id="extraCreditScoreTotal"></span></td>
+                        <td>25</td>
+                        <td><button id="showExtraCreditTableButton"> <b>Show Scores</b> </button></td>
+                    </tr>
+                    <tr>
+                        <td><b>Participation</b></td>
+                        <td><span id="participationScoreTotal"></span></td>
+                        <td>75</td>
+                        <td><button id="showParticipationTableButton"> <b>Show Scores</b> </button></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <br>
+            <!--will display Table to enter (5) Lab Assignments-->
+            <table id="labTable">
+                <th colspan="2">Lab Scores</th>
+                <tr>
+                    <td><b>Assignments</b></td>
+                    <td><b>Points Earned</b></td>
+                </tr>
+                <tr>
+                    <td>Lab 1</td>
+                    <td><input type="number" id="labEntry1">&ensp;/ 25&ensp; </td>
+                </tr>
+                <tr id="labScore2">
+                    <td>Lab 2</td>
+                    <td><input type="number" id="labEntry2">&ensp;/ 25&ensp;</td>
+                </tr>
+                <tr id="labScore3">
+                    <td>Lab 3</td>
+                    <td><input type="number" id="labEntry3">&ensp;/ 25&ensp;</td>
+                </tr>
+                <tr id="labScore4">
+                    <td>Lab 4</td>
+                    <td><input type="number" id="labEntry4">&ensp;/ 25&ensp;</td>
+
+                </tr>
+                <tr id="labScore5">
+                    <td>Lab 5</td>
+                    <td><input type="number" id="labEntry5">&ensp;/ 25&ensp;</td>
+                </tr>
+
+            </table>
+            <!--will display Table to enter (5) Quizes-->
+            <table id="quizTable">
+                <th colspan="2">Quiz Scores</th>
+                <tr>
+                    <td><b>Assignments</b></td>
+                    <td><b>Points Earned</b></td>
+                </tr>
+                <tr>
+                    <td>Quiz 1</td>
+                    <td><input type="number" id="quizEntry1">&ensp;/ 10&ensp;</td>
+                </tr>
+                <tr id="quizScore2">
+                    <td>Quiz 2</td>
+                    <td><input type="number" id="quizEntry2">&ensp;/ 10&ensp;</td>
+                </tr>
+                <tr id="quizScore3">
+                    <td>Quiz 3</td>
+                    <td><input type="number" id="quizEntry3">&ensp;/ 10&ensp;</td>
+                </tr>
+                <tr id="quizScore4">
+                    <td>Quiz 4</td>
+                    <td><input type="number" id="quizEntry4">&ensp;/ 10&ensp;</td>
+
+                </tr>
+                <tr id="quizScore5">
+                    <td>Quiz 5</td>
+                    <td><input type="number" id="quizEntry5">&ensp;/ 10&ensp;</td>
+
+            </table>
+
+            <!--will display Table to enter (2) Exams-->
+            <table id="examTable">
+                <th colspan="2">Exam Scores</th>
+                <tr>
+                    <td><b>Assignments</b></td>
+                    <td><b>Points Earned</b></td>
+                </tr>
+                <tr>
+                    <td>Exam 1</td>
+                    <td><input type="number" id="examEntry1">&ensp;/100&ensp;</td>
+                </tr>
+                <tr id="examScore2">
+                    <td>Exam 2</td>
+                    <td><input type="number" id="examEntry2">&ensp;/100&ensp;</td>
+                </tr>
+            </table>
+
+            <!--will display Table to enter (1) Project-->
+            <table id="projectTable">
+                <th colspan="2">Project Score</th>
+                <tr>
+                    <td><b>Assignment</b></td>
+                    <td><b>Points Earned</b></td>
+                </tr>
+                <tr>
+                    <td>Project</td>
+                    <td><input type="number" id="projectEntry">&ensp;/100&ensp;</td>
+                </tr>
+            </table>
+
+            <!--will display Table to enter (1) Extra Credit-->
+            <table id="extraCreditTable">
+                <th colspan="2">Extra Credit Score</th>
+                <tr>
+                    <td><b>Assignment</b></td>
+                    <td><b>Points Earned</b></td>
+                </tr>
+                <tr>
+                    <td>Extra Credit</td>
+                    <td><input type="number" id="extraCreditEntry">&ensp;/25&ensp;</td>
+                </tr>
+            </table>
+
+            <!--will display Table to enter (5) Particpation Scores-->
+            <table id="participationTable">
+                <th colspan="2">Participation Scores</th>
+                <tr>
+                    <td><b>Assignments</b></td>
+                    <td><b>Points Earned</b></td>
+                </tr>
+                <tr>
+                    <td>Participation 1</td>
+                    <td><input type="number" id="participationEntry1">&ensp;/5&ensp;</td>
+                </tr>
+                <tr id="participationScore2">
+                    <td>Participation 2</td>
+                    <td><input type="number" id="participationEntry2">&ensp;/5&ensp;</td>
+                </tr>
+                <tr id="participationScore3">
+                    <td>Participation 3</td>
+                    <td><input type="number" id="participationEntry3">&ensp;/5&ensp;</td>
+                </tr>
+                <tr id="participationScore4">
+                    <td>Participation 4</td>
+                    <td><input type="number" id="participationEntry4">&ensp;/5&ensp;</td>
+
+                </tr>
+                <tr id="participationScore5">
+                    <td>Participation 5</td>
+                    <td><input type="number" id="participationEntry5">&ensp;/5&ensp;</td>
+                </tr>
+
+            </table>
+        </div>
+        <br>
+        <div>
+            <!--Buttons to Add each score under the Table-->
+            <button id="addLabButton" onclick="grades()"> <b>Add</b> </button>
+            <button id="addQuizButton" onclick="grades()"> <b>Add</b> </button>
+            <button id="addExamButton" onclick="grades()"> <b>Add</b> </button>
+            <button id="addProjectButton" onclick="grades()"> <b>Add</b> </button>
+            <button id="addExtraCreditButton" onclick="grades()"> <b>Add</b> </button>
+            <button id="addParticipationButton" onclick="grades()"> <b>Add</b> </button>
+            <!--Button to Close table under the Table-->
+            <button id="closeButton"> <b>Close</b> </button>
+        </div>
+        <br>
+        <div>
+            <button id="calculateGradeButton" onclick="grades()"> <b>Calculate Final Grade</b> </button>
+
+        </div>
+    </main>
+    <br>
+    <span id="finalPercent"></span>
+    <br><br/><br/>
+
+    <footer>
+        Copyright &copy; Sharyl Riley 2022
+    </footer>
+    </div>
+</body>
+
+</html>
