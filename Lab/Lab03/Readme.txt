@@ -1,5 +1,5 @@
-ITS 362 � Distributed Application Development
-Lab 03 � jQuery
+ITS 362 Distributed Application Development
+Lab 03 jQuery
 
 
 Objectives:
@@ -16,18 +16,8 @@ Here are a few requirements:
 there should be no assignment textbox(es). You will need to provide a mechanism (such as buttons) to add assignments 
 with scores as needed (up to a limit of 5). Please make sure that each type of assignment does not exceed its limit. 
 
-2) The grade calculation may be done by pressing a �calculate� or �submit� button or upon hitting the enter 
+2) The grade calculation may be done by pressing a calculate or submit button or upon hitting the enter 
 key when entering a score for any graded item. 
 
 3) You should test your code in at least two (2) different browsers.
-
-You should have a separate css file for any styles you need for this app, and a separate js file for javaScript and jQuery.
-
-Please follow the good coding styles, use modules, and adopt meaningful names and good naming convention.
-
-Deliverables
-An electronic copy of your code files (html, css, and js) and screen shots that show a working webpage submitted to Blackboard Learn. Please zip everything.
-
-
-ITS362 Lab04		1 of 1
 
