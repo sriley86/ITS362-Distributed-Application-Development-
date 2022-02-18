@@ -1,5 +1,5 @@
-ITS 362 � Distributed Application Development
-Lab 04 � jQuery UI
+ITS 362  Distributed Application Development
+Lab 04 jQuery UI
 
 
 Objectives:
