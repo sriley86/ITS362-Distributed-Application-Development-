@@ -182,32 +182,25 @@ $(function() {
     });
 });
 
-//+++++++++++++++++++++++++++++++ADD BUTTON++++++++++++++++++++++++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++REMOVE BUTTON++++++++++++++++++++++++++++++++++++++++++++++++++++
 // function - click on the add button to add to score and to show another entry box
 // Lab scores (4)
 $(document).ready(function() {
 
     $("#removeLastLabButton").click(function() {
         $("#labScore5").hide();
-        //$('#labEntry5').replaceWith(0);
+        document.getElementById('labEntry5').value = "0"; //credit to Quinten Ozahanics for figuring out this code 
 
 
     });
 });
 
-// function addToTable() {
-//     var $inputValue = $('#labEntry5').val();
-//     var $addInputCell = $('<td></td>');
-//     var $newInputValue = $('0').val();
-//     $addInputCell.text($inputValue);
-//     $('#labEntry5').replaceWith($newInputValue);
 
-// }
 // Quiz scores (4)
 $(document).ready(function() {
     $("#removeLastQuizButton").click(function() {
         $("#quizScore5").hide();
-        //$("#quizEntry5").replaceWith(0);
+        document.getElementById('quizEntry5').value = "0"; //credit to Quinten Ozahanics for figuring out this code 
 
     });
 });
@@ -216,7 +209,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#removeLastExamButton").click(function() {
         $("#examScore2").hide();
-        //$("#examEntry2").replaceWith(0);
+        document.getElementById('examEntry2').value = "0"; //credit to Quinten Ozahanics for figuring out this code 
 
     });
 });
@@ -225,7 +218,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#removeLastParticipationButton").click(function() {
         $("#participationScore5").hide();
-        //$("#participationEntry5").replaceWith(0);
+        document.getElementById('participationEntry5').value = "0"; //credit to Quinten Ozahanics for figuring out this code 
 
     });
 });
