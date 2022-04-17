@@ -1,1 +1,17 @@
-ITS 362 – Distributed Application DevelopmentLab 08 – MVC PatternObjectives:1.     To learn to organize your previous code into an MVC pattern. Tasks:This lab is based upon the previous labs (Lab 07). In the previous lab, you were required to create and work with your own database created in phpMyAdmin. For this lab, you are now required to organize your previous lab’s code into the Model-View-Controller (MVC) pattern. Remember the following: Controller – the file that maintains the flow of data (query function calls) between the data source and the user.Model – the file that sets up your data source (connections/queries).View – the fail that maintains the looks of your site/application. You should make sure of including header/footers on your view page as in the class example.
+ITS 362 √ê Distributed Application Development
+Lab 08 √ê MVC Pattern
+
+
+Objectives:
+1.To learn to organize your previous code into an MVC pattern.
+
+Tasks:
+
+This lab is based upon the previous labs (Lab 07). In the previous lab, you were required to create and work with your own database created in phpMyAdmin. For this lab, you are now required to organize your previous lab√ïs code into the Model-View-Controller (MVC) pattern. 
+
+Remember the following:
+Controller √ê the file that maintains the flow of data (query function calls) between the data source and the user.
+Model √ê the file that sets up your data source (connections/queries).
+View √ê the fail that maintains the looks of your site/application. 
+
+You should make sure of including header/footers on your view page as in the class example.
