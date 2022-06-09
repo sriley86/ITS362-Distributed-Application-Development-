@@ -19,5 +19,5 @@ username and password of a user and an administrator in their respective tables.
 You should have different welcome pages for either a user or an administrator. 
 A user should only be able to insert a new lastname as in Problem 2, and an 
 administrator should be able to delete an entry in the table.
-Do not forget to implement a logout feature.
+Don't forget to implement a logout feature.
 
